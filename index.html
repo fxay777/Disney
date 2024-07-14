@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disney+</title>
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
@@ -12,28 +12,128 @@
             <h1 class="hero__content__branding">
                 <img src="./dist/images/images/disneyplus.svg" alt="Disney Plus">
             </h1>
-            <h3 class="title--small">
-                As melhores histórias em um só lugar.
-            </h3>
+            <h3 class="title--small">As melhores histórias em um só lugar.</h3>
             <p>
                 <a href="" class="link-text">Assinar o Disney+</a>
                 <br>
                 <span class="text">R$27,90/mês ou R$ 279,90/ano à vista*</span>
             </p>
             <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo ">
+                <li class="hero__content__combos__combo">
                     <img src="./images/logos/disney_star_plus.png" alt="Disney e Star Plus">
-                    <button>Assine Agora</button>
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 45,90/mês</span>
                 </li>
-                <li class="hero__content__combos__combo ">
-                    <img src="./images/logos/disney_star_plus_starzplay.png" alt="Disney e Star Plus">
-                    <button>Assine Agora</button>
-                    <span class="text">R$ 45,90/mês</span>
+                <li class="hero__content__combos__combo">
+                    <img src="./images/logos/disney_star_plus_starzplay.png" alt="Disney, Star Plus e Starzplay">
+                    <button class="button">Assine Agora</button>
+                    <span class="text">R$ 55,90/mês</span>
                 </li>
             </ul>
-            <p class="text--small">O Disney+ Premium inclui todos os canais da ESPN, torneios exclusivos e eventos esportivos. O Disney+ Padrão inclui canais selecionados da ESPN (ESPN e ESPN3)</p>
+            <p class="text--small">
+                O Disney+ Premium inclui todos os canais da ESPN, torneios exclusivos e eventos esportivos. O Disney+ Padrão inclui canais selecionados da ESPN (ESPN e ESPN3).
+            </p>
         </div>
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button  data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
+            <button data-tab-button="populares" class="shows__tabs__button">Mais populares</button>
+            <button  data-tab-button="star_plus" class="shows__tabs__button">Mais no Star+</button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/lobisomem.jpg" alt="Lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/willow.jpg" alt="Willow">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/desencantada.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/sem_limites.jpg" alt="Sem Limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./images/mais_populares/bluey.jpg" alt="Bluey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleiro da Lua">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_populares/obi_wan.jpg" alt="Obi-Wan Kenobi">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_populares/o_incrivel_dr_pol.jpg" alt="O Incrível Dr. Pol">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_populares/red.jpg" alt="Red: Crescer é uma Fera">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo Igual SQN">
+            </li>
+        </ul>
+        <ul data-tab-id="star_plus" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./images/mais_no_star_plus/belair.jpg" alt="Bel-Air">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_no_star_plus/nba.jpg" alt="NBA">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpsons">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title--big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./images/logos/disneyplus_underline.png" alt="">
+                <strong class="title--small">R$27,90/mês</strong>
+                <p class="text">
+                    No Disney + você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./images/logos/disney_star_plus_sm.png" alt="">
+                <strong class="title--small">R$27,90/mês</strong>
+                <p class="text">
+                    No Disney + você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./images/logos/disney_star_plus_starzplay_underline.png" alt="">
+                <strong class="title--small">R$27,90/mês</strong>
+                <p class="text">
+                    No Disney + você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *O Preço pode variar caso a assinatura seja feita através de outras plataformas.*
+        </p>
+    </section>
+    <script src="./shows/main.js"></script>
 </body>
 </html>
