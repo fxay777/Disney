@@ -1,4 +1,4 @@
-@use './var.scss';
+@use 'var';
 
 .shows {
   padding: 2vw 5.6vw;
@@ -7,7 +7,7 @@
   &__list {
     margin-top: 44px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); // Simplified declaration
     gap: 24px;
 
     &--is-active {
@@ -26,6 +26,12 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width: 768px) {
+      white-space: nowrap;
+      overflow-x: scroll;
+      padding-left: 18px;
+    }
+
     &__button {
       color: var.$corTextoSecundario;
       font-size: 20px;
@@ -39,6 +45,10 @@
 
       &--is-active {
         border-bottom: 5px solid var.$corTextoSecundario;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 16px;
       }
     }
   }

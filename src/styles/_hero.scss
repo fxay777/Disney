@@ -3,16 +3,29 @@
 .hero {
   padding: 5.6vw;
   min-height: 80vh;
-  background-image: url(/Disney/images/hero_desktop.jpeg);
+  background-image: url(/Disney/images/hero_desktop.jpeg); // Check path
   text-align: center;
   background-size: cover;
 
+  @media (max-width: 768px) {
+    background-image: url(../../images/hero_celular.jpeg); // Check path
+    padding-top: calc(50vw + 25px); // Adjust if necessary
+    background-size: contain; // Ensure this is the desired effect
+    background-repeat: no-repeat;
+    margin-top: -55px; // Check if this affects layout
+  }
+
   &__content {
     max-width: 640px;
+    margin: 0 auto; // Centers the content
 
     &__branding {
       max-width: 320px;
       margin: 0 auto 38px;
+
+      @media (max-width: 768px) {
+        max-width: 180px;
+      }
     }
 
     .title--small {
@@ -31,14 +44,21 @@
       display: flex;
       justify-content: space-between;
 
+      @media (max-width: 768px) {
+        display: block;
+      }
+
       &__combo {
         width: calc(50% - 12px);
+
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-bottom: 24px;
+        }
 
         img {
           max-height: 60px;
         }
-
-        
       }
     }
   }
